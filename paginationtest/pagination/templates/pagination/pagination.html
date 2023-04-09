@@ -1,0 +1,11 @@
+{% extends "pagination/base.html" %}
+
+{% block content %}
+    {% for book in page_obj %}
+    <p>
+    name={{ book.name }}|
+    {{ book.pages }} pages|
+    something={{book.somethings}}|
+    </p>
+    {% endfor %}
+{% endblock %}
